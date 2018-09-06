@@ -21,7 +21,7 @@ setuptools.setup(
     install_requires=[
             'pandas==0.22.0',
             'numpy==1.14.5',
-            'psycopg2==2.7.1',
+            'psycopg2==2.7.5',
             'sqlalchemy==1.1.10'
       ]
 )
