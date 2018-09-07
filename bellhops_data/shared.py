@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import psycopg2
 from datetime import timedelta, datetime, date, time
-from sqlalchemy import create_engine
 
 def table_frame_equivalence(schema_name, table_name, database_dataframe, output_dataframe, psycopg_connection, postgres_column_type):
     '''Enter a postgres schema name and table name followed by a pandas dataframe of the table and output dataframe.
