@@ -17,5 +17,7 @@ def table_frame_equivalence(schema_name, table_name, database_dataframe, output_
                 cur.execute('ALTER TABLE %s.%s ADD COLUMN %s %s' % (schema_name, table_name, column, postgres_column_type))
             conn.commit()
         final_output_dataframe = pd.concat([output_dataframe, pd.DataFrame(columns=dataframe_missing)], axis=1)
+    else
+        final_output_dataframe = output_dataframe
 
     return final_output_dataframe
