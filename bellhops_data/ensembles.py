@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from xgboost import XGBRegressor
 from sklearn.ensemble import AdaBoostRegressor
+from sklearn.utils.validation import has_fit_parameter, check_is_fitted
 
 class AdaBoostQuantile(AdaBoostRegressor):
     def _get_quantile_predict(self, X, limit):
