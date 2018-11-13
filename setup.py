@@ -22,5 +22,7 @@ setuptools.setup(
             'pandas==0.22.0',
             'numpy==1.14.5',
             'psycopg2==2.7.5',
+            'scikit-learn==0.18.2',
+            'xgboost==0.71'
       ]
 )
