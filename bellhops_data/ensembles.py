@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import AdaBoostRegressor, GradientBoostingRegressor
+from xgboost import XGBRegressor
+from sklearn.ensemble import AdaBoostRegressor
 
 class AdaBoostQuantile(AdaBoostRegressor):
     def _get_quantile_predict(self, X, limit):
